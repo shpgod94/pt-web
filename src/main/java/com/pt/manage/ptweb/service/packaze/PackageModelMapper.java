@@ -11,6 +11,6 @@ import java.util.List;
 public interface PackageModelMapper {
     PackageModelMapper INSTANCE = Mappers.getMapper(PackageModelMapper.class);
 
-    List<java.lang.Package> map(List<PackageEntity> packageEntities);
+    List<Package> map(List<PackageEntity> packageEntities);
 
 }

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: pt-web
+  datasource:                           # docker-compose? ???? DB ?? ?????.
+    url: jdbc:mysql://127.0.0.1:3306/pt_local?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: pt_local_user
+    password: ptlocal123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false

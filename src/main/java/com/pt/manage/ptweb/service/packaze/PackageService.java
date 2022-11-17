@@ -14,7 +14,7 @@ public class PackageService {
         this.packageRepository = packageRepository;
     }
 
-    public List<java.lang.Package> getAllPackages() {
+    public List<Package> getAllPackages() {
         List<PackageEntity> bulkPassEntities = packageRepository.findAllByOrderByPackageName();
         return PackageModelMapper.INSTANCE.map(bulkPassEntities);
     }
